@@ -5,12 +5,14 @@ public class Journal
 {   
     public List<Journal>journallist = new List<Journal>();
 
-    public string _EntryText;
 
+    public string _EntryText;
     public string _Prompt;
     public string _Date;
     public string _Writemyday;
     public string _Mood;
+
+
 
     public string prompts()
     {
@@ -19,7 +21,8 @@ public class Journal
         int index = random.Next(list.Count);
         return list[index];
     }
-    
+
+
     public string timeEntry()
     {
         DateTime theCurrentTime = DateTime.Now;
@@ -28,6 +31,8 @@ public class Journal
         return dateText;
     }
 
+
+
     public void Write()
     {
         Journal journal = new Journal();
@@ -35,6 +40,8 @@ public class Journal
 
         journallist.Add(journal);
     }
+
+
 
     public void Display()
     {
@@ -45,5 +52,7 @@ public class Journal
         }
         
     }
+
+
 
 }
