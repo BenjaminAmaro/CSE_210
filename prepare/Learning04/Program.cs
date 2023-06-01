@@ -1,44 +1,20 @@
 using System;
 
+
 class Program
 {
     static void Main(string[] args)
     {
-        
-        // Scripture quotable = new Scripture();
-        // Display writeVerse = new Display();
-        // word blankwords = new word(quotable.GetCitation(), quotable.GetVerse());
-        // writeVerse.OutputOne(quotable.GetCitation(),quotable.GetVerse());
+        Assignment A1 = new Assignment("Samuel Bennett", "Multiplication"); 
+        Console.WriteLine(A1.GetSummary());
 
-        // bool _runApp = true;
+        MathAssignment A2 = new MathAssignment("Roberto Rodriguez -"," Fractions", "7.3", "8-19");
+        Console.WriteLine(A2.GetSummary());
+        Console.WriteLine(A2.GetHomeworkList());
 
-        // while(_runApp)
-        // {
-        //     Console.Write("Press ENTER to continue or type 'quit' to end. ");
-        //     string input = Console.ReadLine();
-        //     if (input == "")
-        //     {
-        //         blankwords.WordBlanker();
-        //         string scripture = blankwords.ScriptureGetter();
-        //         writeVerse.OutputTwo(scripture);
-        //         _runApp = blankwords.DoneYet();
-
-        //         if (!_runApp)
-        //         {
-        //             Console.WriteLine("Thnaks for using the memorizer");
-        //         }
-        //     }
-
-        //     else if (input == "quit")
-        //     {
-        //         _runApp = false;
-        //     }
-
-        //     else
-        //     {
-        //         Console.WriteLine("Invalid Selection, please try 'quit' or 'Enter'. ");
-        //         continue;
-        //     }
-        // }
+        WritingAssignment A3 = new WritingAssignment("Mary Waters", "European History", "The Causes of World War II");
+        Console.WriteLine(A3.GetSummary());
+        Console.WriteLine(A3.GetWritingInformation());
     }
+
 }
