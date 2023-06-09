@@ -12,12 +12,10 @@ public class ListingActivity : Activity
     private List<string> _userResponses = new List<string>();
 
 
-
     public ListingActivity (string activityName, string description) : base(activityName, description)
     {
         _activityName = activityName;
         _description = description;
-
     }
     
         public void ListingPrompt()
@@ -39,7 +37,9 @@ public class ListingActivity : Activity
         Console.WriteLine("List as many responses you can to the following prompt: ");
         Console.WriteLine($"--- {_listingPrompt} ---");
         Console.WriteLine();
+
         Console.Write("you may begin in: ");
+        
         for (int i =5; i> 0; i --)
         {
             Console.Write(i);

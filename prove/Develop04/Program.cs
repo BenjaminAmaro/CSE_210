@@ -60,6 +60,7 @@ class Program
             reflecting1.GetInfoEnd();
 
             reflecting1.MethodSpin();
+
             Console.Clear();
 
 
@@ -77,9 +78,13 @@ class Program
 
             Console.WriteLine("Get Ready... ");
             reflecting3.MethodSpin();
+
             reflecting3.StartListing();
+
             reflecting3.GetInfoEnd();
+
             reflecting3.MethodSpin();
+
             Console.Clear();
 
 
@@ -95,6 +100,7 @@ class Program
 
             special.SetDuration();
             Console.Clear();
+            
             int choice1;
             do
             {
@@ -107,14 +113,18 @@ class Program
                 choice1 = Convert.ToInt32(Console.ReadLine());
                 switch (choice1)
                 {
-                    case 1:
+                        case 1:
                         Console.Clear();
                         Console.WriteLine("Deep relax breathing");
                         Console.WriteLine("Get Ready... ");
                         Thread.Sleep(0500);
+
                         special.MethodSpin();
+
                         special.BreathingLow();
+
                         special.GetInfoEnd();
+
                         special.MethodSpin();
                         Console.Clear();
                         break;
@@ -124,10 +134,13 @@ class Program
                         Console.WriteLine("Focus Breathing");
                         Console.WriteLine("Get Ready... ");
                         Thread.Sleep(0500);
+
                         special.MethodSpin();
 
                         special.BreathingFocus();
+
                         special.GetInfoEnd();
+
                         special.MethodSpin();
                         Console.Clear();
                         break;
@@ -137,24 +150,28 @@ class Program
                         Console.WriteLine("Wake Up Breathing");
                         Console.WriteLine("Get Ready... ");
                         Thread.Sleep(0500);
+
                         special.MethodSpin();
 
                         special.BreathingWakeUP();
+
                         special.GetInfoEnd();
+                        
                         special.MethodSpin();
                         Console.Clear();
                         break;
 
                     case 4:
                         Console.WriteLine("Retunning to the main Menu");
+
                         special.MethodSpin();
                         Console.Clear();
                         break;
                     default:
                         Console.WriteLine("Invalid Choice ");
                         break;
-                }
-            } while (choice1 != 4);
+                    }
+                } while (choice1 != 4);
                 break;
 
             case 5:
@@ -164,7 +181,7 @@ class Program
             default:
                 Console.WriteLine("Invalid Choice ");
                 break;
-        }
-            }while (choice!= 5);
+            }
+        }while (choice!= 5);
     }
 }

@@ -33,7 +33,7 @@ public class Activity
 
     public void GetInfoEnd()
     {
-                Console.WriteLine();
+        Console.WriteLine();
         Console.WriteLine();
         Console.WriteLine("Well done!! ");
         Console.WriteLine();
@@ -42,6 +42,7 @@ public class Activity
     public void MethodSpin()
     {
         List<string> animation = new List<string>();
+
         animation.Add("|");
         animation.Add("/");
         animation.Add("-");

@@ -31,10 +31,12 @@ public class ReflectingActivty : Activity
         Console.WriteLine();
         Console.WriteLine($"--- {_prompt} ---");
         Console.WriteLine();
+
         Console.WriteLine("When you have something in mind, press enter to continue");
         Console.ReadLine();
         Console.WriteLine("Now ponder on each of the following questions as they related to this experience.");
         Console.Write("you may begin in: ");
+        
         for (int i =5; i> 0; i --)
         {
             Console.Write(i);
