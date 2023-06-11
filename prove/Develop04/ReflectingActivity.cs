@@ -2,17 +2,10 @@ using System;
 
 public class ReflectingActivty : Activity
 {
-    private string _activityName;
-
-    private string _description;
-
     private string _prompt;
-
 
     public ReflectingActivty (string activityName, string description) : base(activityName, description)
     {
-        _activityName = activityName;
-        _description = description;
 
     }
 

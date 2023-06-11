@@ -2,10 +2,6 @@ using System;
 
 public class SpecializedActivity : Activity
 {
-    private string _activityName;
-
-    private string _description;
-
     private string _in;
 
     private string _out;
@@ -16,8 +12,7 @@ public class SpecializedActivity : Activity
 
     public SpecializedActivity (string activityName, string description, string breathin, string breathout, string hold) : base(activityName, description)
     {
-        _activityName = activityName;
-        _description = description;
+
         _in = breathin;
         _out = breathout;
         _hold = hold;

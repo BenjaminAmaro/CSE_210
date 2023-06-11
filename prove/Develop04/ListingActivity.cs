@@ -2,11 +2,6 @@ using System;
 
 public class ListingActivity : Activity
 {
-    private string _activityName;
-
-    private string _description;
-
-
     private string _listingPrompt;
 
     private List<string> _userResponses = new List<string>();
@@ -14,8 +9,7 @@ public class ListingActivity : Activity
 
     public ListingActivity (string activityName, string description) : base(activityName, description)
     {
-        _activityName = activityName;
-        _description = description;
+
     }
     
         public void ListingPrompt()

@@ -2,18 +2,12 @@ using System;
 
 public class BreathingActivity : Activity
 {
-    private string _activityName;
-
-    private string _description;
-
     private string _in;
 
     private string _out;
 
     public BreathingActivity (string activityName, string description, string breathin, string breathout) : base(activityName, description)
     {
-        _activityName = activityName;
-        _description = description;
         _in = breathin;
         _out = breathout;
     }
