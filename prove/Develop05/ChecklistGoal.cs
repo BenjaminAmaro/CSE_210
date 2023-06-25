@@ -16,17 +16,15 @@ public  class ChecklistGoal : Goal
         _numbersOfCompletedGoal = 0; 
 
     }
+
     public ChecklistGoal(string goalType, string GoalName, string description, int points, int numbersOfCompletedGoal, int times, int bonus) 
     : base(goalType, GoalName, description, points)
     {
-
-
         _times = times;
 
         _bonus = bonus;
 
         _numbersOfCompletedGoal = numbersOfCompletedGoal;
-
     }
 
     public int GetTimes()
@@ -38,6 +36,7 @@ public  class ChecklistGoal : Goal
     {
         return _bonus;
     }
+
     public int GetNumberOfCompletedGoal()
     {
         return _numbersOfCompletedGoal;
@@ -63,27 +62,17 @@ public  class ChecklistGoal : Goal
     {
         return new ChecklistGoal(GetGoalType(),GetGoalName(),GetGoalDescription(),GetGoalpoints(),GetTimes(),GetBonus()); 
 
-        // 
     }
-
 
     public override string DisplayGoal(int index)
     {
         return $"{index}. {GetStringGoal()} {GetGoalName()} ({GetGoalDescription()}) -- completed {GetNumberOfCompletedGoal()}/{GetTimes()}";
-
     }
 
         public override string SaveGoals()
     {
         return $"{GetGoalType()},{GetGoalName()},{GetGoalDescription()},{GetGoalpoints()},{GetBonus()},{GetTimes()},{GetNumberOfCompletedGoal()}";
-
     }
-
-    // public override ChecklistGoal LoadGoal(string goalType, string GoalName, string description, int points, bool isComplete)
-    // {
-    //     return CreateNewGoal();
-
-    // }
 
     public override void RecordEvent()
     {
@@ -95,8 +84,5 @@ public  class ChecklistGoal : Goal
         {
             _points += _bonus;
         }
-        
-        
     }
-
 }

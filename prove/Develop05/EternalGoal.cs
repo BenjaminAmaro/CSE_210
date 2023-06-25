@@ -13,7 +13,6 @@ public class EternalGoal : Goal
         return new EternalGoal(GetGoalType(),GetGoalName(),GetGoalDescription(),GetGoalpoints()); 
     }
 
-    
     public override string DisplayGoal(int index)
     {
         return $"{index}. {GetStringGoal()} {GetGoalName()} ({GetGoalDescription()})";
@@ -23,10 +22,7 @@ public class EternalGoal : Goal
     {
         return $"{GetGoalType()},{GetGoalName()},{GetGoalDescription()},{GetGoalpoints()}";
     }
-    //     public override EternalGoal LoadGoal(string goalType, string GoalName, string description, int points, bool isComplete)
-    // {
-    //     return CreateNewGoal();
-    // }
+
     public override void RecordEvent()
     {
         

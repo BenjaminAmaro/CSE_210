@@ -126,7 +126,6 @@ class Program
 
                 using (StreamWriter outputFile = new StreamWriter(fileName))
                 {
-                    // score = goalsList[0].GetScore();
                     outputFile.WriteLine(score);
                     foreach (var goal in goalsList)
                     {   
@@ -202,26 +201,9 @@ class Program
                 var goalRecord = goalsList[choiceRecord-1];
                 goalRecord.RecordEvent();
 
-                // if(goalRecord.GetGoalType() == "SimpleGoal" || goalRecord.GetGoalType() == "EternalGoal")
-                // {
-                    score += goalRecord.GetGoalpoints();
-                
-                // else
-                // {
-                //     var t = new ChecklistGoal(goalRecord.GetGoalType,goalRecord.GetGoalName,goalRecord.GetGoalDescription,goalRecord.GetGoalpoints,goalRecord.)
-                //     if (goalRecord.GetIsComplete())
-                //     {
-                //         score = score + goalRecord.GetGoalpoints() + goalRecord.GetBonus();
-                //     }
-                //     else
-                //     {
-                //         score += goalRecord.GetGoalpoints();
-                //     }
-                // }
-                
+                score += goalRecord.GetGoalpoints();                
 
                 break;
-
                 
             case 6:
 
@@ -230,8 +212,10 @@ class Program
                 
             default:
                 Console.WriteLine("Invalid Choice ");
+                
                 break;
                 }
+
         }while (choice!= 6);
     }
 }

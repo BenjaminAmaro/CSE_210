@@ -35,15 +35,12 @@ public class SimpleGoal : Goal
     {
         return $"{index}. {GetStringGoal()} {GetGoalName()} ({GetGoalDescription()})";
     }
+    
     public override string SaveGoals()
     {
         return $"{GetGoalType()},{GetGoalName()},{GetGoalDescription()},{GetGoalpoints()},{GetIsComplete()}";
     }
 
-    // public override SimpleGoal LoadGoal(string goalType, string GoalName, string description, int points, bool isComplete)
-    // {
-    //     return new SimpleGoal(goalType,GoalName,description,points,isComplete); 
-    // }
     public override void RecordEvent()
     {
         SetIsCompleted();

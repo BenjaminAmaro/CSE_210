@@ -8,7 +8,6 @@ public abstract class Goal
     protected int _points;
     protected bool _isComplete;
     protected string _stringGoal;
-    // protected int _score;
 
     public Goal (string goalType, string goalName, string description, int points)
     {
@@ -54,8 +53,6 @@ public abstract class Goal
 
     public abstract string SaveGoals();
     
-    // public abstract Goal LoadGoal(string goalType, string GoalName, string description, int points, bool isComplete);
-
     public abstract void RecordEvent();
 
 }
